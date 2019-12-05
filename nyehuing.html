@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>녜힁 제조기</title>
+    <meta charset = "utf-8">
+    <link rel = "stylesheet" href = "style.css">
+    <script type="text/javascript" src="nyehuing_maker.js"></script>
+</head>
+<body>
+<div class = "header">
+    <h1><img src = "./image/icon.png">녜힁 닷넷</h1>
+</div>
+<div class = "menu">
+    <input type = "button" value = "녜힁 제조기">
+    <input type = "button" value = "코인 계획표">
+</div>
+<div class = "body">
+    <h2>★랜덤 녜힁 제조기★</h2>
+    <input type = "button" id = "output" value = "여기에 녜힁 출력" onclick="copy()">
+    <p>
+    <input type = "text" id = "length" maxlength = "1" value = "2" style = "width:20px;text-align:center;">
+    글자의 닉네임을 생성!
+    <input type = "button" id = "button" onclick = "makeNyehuing(document.getElementById('length').value)" value = "Go">
+    </p>
+    <p style = "line-height: 250%;font-size: 14px;">(!) 닉네임을 클릭시 자동으로 복사가 됩니다.(일부 브라우저 제외)</p>
+</div>
+</body>
+</html>
