@@ -25,6 +25,12 @@ h2 {
     color: white;
 }
 
+h4 {
+    font-family: CookieRunRegular;
+    text-align: center;
+    color: white;
+}
+
 p {
     font-family: CookieRunRegular;
     text-align: center;
@@ -33,6 +39,9 @@ p {
 
 img {
     vertical-align: middle;
+}
+
+#icon {
     margin-right: 10px;
 }
 
@@ -46,7 +55,7 @@ table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: collapse;
-    width: 75%;
+    width: 90%;
 }
   
 th, td {
@@ -54,7 +63,39 @@ th, td {
     padding: 8px;
 }
   
-tr:nth-child(even) {background-color: peru;}
+tr:nth-child(even) {
+    background-color: peru;
+}
+
+input[type = text] {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-family: CookieRunRegular;
+    color: black;
+    text-align: right;
+    width: 10%;
+}
+
+
+select {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    font-family: CookieRunRegular;
+    color: black;
+}
+
+ul {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    font-family: CookieRunRegular;
+    color: black;
+}
 
 .menu {
     background-color: peru;
@@ -84,7 +125,7 @@ tr:nth-child(even) {background-color: peru;}
     text-align: center;
 }
 
-#button {
+.button {
     background-color: peru;
     font-family: CookieRunRegular;
     text-align: center;
@@ -116,11 +157,26 @@ tr:nth-child(even) {background-color: peru;}
     padding-bottom: 10px;
 }
 
-#grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
 .level {
     border-right: 3px solid goldenrod;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type="number"] {
+    padding: 3px 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-family: CookieRunRegular;
+    color: black;
+    text-align: right;
+    width: 10%;
+}
+
+input[type="number"].quantity {
+    width: 70%;
 }
