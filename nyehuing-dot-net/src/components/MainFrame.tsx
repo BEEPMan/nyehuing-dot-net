@@ -9,6 +9,7 @@ import {
 } from '@material-ui/core/styles';
 import MainMenu from './MainMenu';
 import MainPage from './MainPage';
+import NyehuingMain from './NyehuingMain';
 import './public/Style.css';
 
 const useStyle = makeStyles((theme: Theme) => 
@@ -32,10 +33,12 @@ const MainFrame: React.FC = () => {
     <div>
       <Link to="/" className={classes.MainTitle}>
         <img src='./icon.png' id='icon'/>
-        녜읭 닷넷
+        녜힁 닷넷
       </Link>
-      <MainMenu></MainMenu>
-      <MainPage></MainPage>
+      <div className='body'>
+        <MainMenu></MainMenu>
+        <NyehuingMain></NyehuingMain>
+      </div>
     </div>
   )
 };
