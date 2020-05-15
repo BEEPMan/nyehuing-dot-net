@@ -8,18 +8,45 @@
   src: url(./font/CookieRunFont_TTF/CookieRun\ Regular.ttf) format('truetype');
 }
 
-.MainSubTitle{
+.MainTitle{
+  font-family: CookieRunBold;
+  font-size: 45px;
+  text-align: center;
+  color: white;
+}
+
+.MainPageTitle{
+  font-family: CookieRunBold;
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.MainPageDescription{
   font-family: CookieRunRegular;
   font-size: 30px;
   text-align: center;
   color: black;
 }
 
-.MainTitle{
-  font-family: CookieRunBold;
-  font-size: 50px;
+.menu {
+  background-color: peru;
+}
+
+.menu input {
+  font-family: CookieRunRegular;
   text-align: center;
+  font-size: large;
   color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 body {
@@ -35,6 +62,11 @@ p {
 
 h2 {
   font-family: CookieRunBold;
+  font-size: 30px;
   text-align: center;
   color: white;
+}
+
+a {
+  text-decoration: none;
 }
