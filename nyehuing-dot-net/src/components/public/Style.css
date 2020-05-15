@@ -1,0 +1,40 @@
+@font-face {
+  font-family: 'CookieRunBold';
+  src: url(./font/CookieRunFont_TTF/CookieRun\ Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CookieRunRegular';
+  src: url(./font/CookieRunFont_TTF/CookieRun\ Regular.ttf) format('truetype');
+}
+
+.MainSubTitle{
+  font-family: CookieRunRegular;
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.MainTitle{
+  font-family: CookieRunBold;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+body {
+  background-color: orange;
+  margin: 0px;
+}
+
+p {
+  font-family: CookieRunRegular;
+  text-align: center;
+  color: black;
+}
+
+h2 {
+  font-family: CookieRunBold;
+  text-align: center;
+  color: white;
+}
