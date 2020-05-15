@@ -31,6 +31,7 @@
 
 .menu {
   background-color: peru;
+  text-align: left;
 }
 
 .menu input {
@@ -49,15 +50,93 @@
   padding-bottom: 10px;
 }
 
+.body {
+  text-align: center;
+}
+
+.nyehuing{
+  font-family: CookieRunRegular;
+  text-align: center;
+  color: black;
+}
+
+.nyehuing input{
+  text-align: center;
+}
+
+.button {
+  background-color: peru;
+  font-family: CookieRunRegular;
+  cursor: pointer;
+  text-align: center;
+  font-size: large;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
 body {
   background-color: orange;
   margin: 0px;
+}
+
+input[type = text] {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-family: CookieRunRegular;
+  color: black;
+  text-align: right;
+  width: 10%;
+}
+
+#output {
+  font-family: CookieRunRegular;
+  text-align: center;
+  font-size: large;
+  color: white;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  overflow: hidden;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+input[type="number"] {
+  padding: 3px 5px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+  font-family: CookieRunRegular;
+  color: black;
+  text-align: center;
+  width: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 p {
   font-family: CookieRunRegular;
   text-align: center;
   color: black;
+  font-size: 20px;
 }
 
 h2 {

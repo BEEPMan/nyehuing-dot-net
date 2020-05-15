@@ -1,6 +1,7 @@
 import React from 'react';
 import MainMenu from './MainMenu';
 import MainPage from './MainPage';
+import NyehuingMain from './NyehuingMain';
 import './public/Style.css';
 
 function MainFrame() {
@@ -12,8 +13,10 @@ function MainFrame() {
           녜힁 닷넷
         </div>
       </a>
-      <MainMenu></MainMenu>
-      <MainPage></MainPage>
+      <div className='body'>
+        <MainMenu></MainMenu>
+        <NyehuingMain></NyehuingMain>
+      </div>
     </div>
   )
 }
