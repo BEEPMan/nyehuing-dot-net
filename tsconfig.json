@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "sourceMap": true,
+    "sourceRoot": "./src",
+    "outDir": "dist",
+    "paths": {
+      "src/*": ["src/*"]
+    }
+  }
+}
