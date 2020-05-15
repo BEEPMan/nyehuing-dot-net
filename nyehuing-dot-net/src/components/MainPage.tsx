@@ -1,7 +1,7 @@
 import React from 'react';
 import './public/Style.css';
 
-function MainPage() {
+const MainPage = () => {
   return (
     <div>
       <div className="MainPageDescription">
@@ -12,6 +12,6 @@ function MainPage() {
       </div>
     </div>
   )
-}
+};
 
 export default MainPage;
