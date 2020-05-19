@@ -1,10 +1,8 @@
 import React from 'react';
-import './public/Style.css';
 
-function NyehuingMain() {
+const Nyehuing: React.FC = () => {
   return (
     <div>
-      <script type="text/javascript" src="/nyehuing_maker.js"></script>
       <h2>★랜덤 녜힁 제조기★</h2>
       <input type="button" id="output" value="여기에 녜힁 출력"></input>
       <p>
@@ -20,4 +18,4 @@ function NyehuingMain() {
   );
 }
 
-export default NyehuingMain;
+export default Nyehuing;

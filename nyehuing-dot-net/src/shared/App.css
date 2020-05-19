@@ -1,18 +1,11 @@
 @font-face {
   font-family: 'CookieRunBold';
-  src: url(./font/CookieRunFont_TTF/CookieRun\ Bold.ttf) format('truetype');
+  src: url(../public/font/CookieRunFont_TTF/CookieRun\ Bold.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'CookieRunRegular';
-  src: url(./font/CookieRunFont_TTF/CookieRun\ Regular.ttf) format('truetype');
-}
-
-.MainTitle{
-  font-family: CookieRunBold;
-  font-size: 45px;
-  text-align: center;
-  color: white;
+  src: url(../public/font/CookieRunFont_TTF/CookieRun\ Regular.ttf) format('truetype');
 }
 
 .MainPageTitle{
@@ -29,12 +22,7 @@
   color: black;
 }
 
-.menu {
-  background-color: peru;
-  text-align: left;
-}
-
-.menu input {
+.MainMenuLink {
   font-family: CookieRunRegular;
   text-align: center;
   font-size: large;
