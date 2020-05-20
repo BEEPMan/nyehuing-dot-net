@@ -1,0 +1,33 @@
+.header{
+  text-align: center;
+}
+
+.logo{
+  font-family: CookieRunBold;
+  font-size: 3.0rem;
+  text-align: center;
+  color: white;
+  line-height: 5.5rem;
+}
+
+.menu {
+  background-color: peru;
+  text-align: left;
+}
+
+.menu-item {
+  font-family: CookieRunRegular;
+  display: inline-block;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.0rem;
+  width: 33.333%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-item:active{
+  background-color: powderblue;
+}
