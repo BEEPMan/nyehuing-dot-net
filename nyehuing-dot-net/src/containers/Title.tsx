@@ -24,7 +24,10 @@ const Title: React.FC = () => {
   const styles = useStyles();
   return (
     <Link component={RouterLink} to='/' underline='none' className={styles.title}>
-      <TitleTypography variant='inherit' paragraph={true}>녜힁 닷넷</TitleTypography>
+      <TitleTypography variant='inherit' paragraph={true}>
+        <img src='./icon.png' alt='노력의 산물' />
+        녜힁 닷넷
+      </TitleTypography>
     </Link>
   );
 };
