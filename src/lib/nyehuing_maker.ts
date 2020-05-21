@@ -5,13 +5,13 @@ const makeNyehuing = (length: number) => {
     for(var i = 0; i < length; i++) {
         t += names[Math.floor(Math.random()*2350)];
     }
-    (document.getElementById('output') as HTMLFormElement).value = t;
+    (document.getElementById('output') as HTMLElement).value = t;
 }
 
 const copy = () => {
     var dummy = document.createElement("textarea");
     document.body.appendChild(dummy);
-    dummy.value = (document.getElementById("output") as HTMLFormElement).value;
+    dummy.value = (document.getElementById("output") as HTMLElement).value;
     dummy.select();
     document.execCommand("copy");
     document.body.removeChild(dummy);

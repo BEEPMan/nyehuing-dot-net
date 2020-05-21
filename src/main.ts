@@ -9,6 +9,11 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 app.use(express.static('../public'));
+app.use(express.static('../nyehuing-dot-net/build'));
+
+app.get('*', (req,res) => {
+    res.sendFile('index.html', {root: '../nyehuing-dot-net/build/'});
+})
 
 app.get('/', (req, res) => {
     let html = template.html('메인', `
@@ -20,7 +25,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/nyehuing', (req, res) => {
-    let html = template.html('녜힁 제조기', `
+    /*let html = template.html('녜힁 제조기', `
         <script type="text/javascript" src="/nyehuing_maker.js"></script>
         <h2>★랜덤 녜힁 제조기★</h2>
         <input type = "button" id = "output" value = "여기에 녜힁 출력" onclick="copy()">
@@ -32,7 +37,7 @@ app.get('/nyehuing', (req, res) => {
         <p style = "line-height: 250%;font-size: 14px;">(!) 닉네임을 클릭시 자동으로 복사가 됩니다.(일부 브라우저 제외)</p>
     `);
 
-    res.send(html);
+    res.send(html);*/
 });
 
 app.get('/boss', async (req, res) => {
