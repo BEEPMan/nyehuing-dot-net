@@ -9,6 +9,9 @@
 }
 
 body {
-  background-color: orange;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-image: url("../Eurel.jpg");
+  background-blend-mode: multiply;
   margin: 0px;
+  height: 900px;
 }

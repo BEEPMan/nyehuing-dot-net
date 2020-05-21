@@ -3,11 +3,6 @@ import { Link as RouterLink, } from 'react-router-dom';
 import { styled, makeStyles } from '@material-ui/core/styles';
 import { Typography, Link } from '@material-ui/core';
 
-interface LinkProps {
-  children?: React.ReactNode;
-  to: string;
-}
-
 const useStyles = makeStyles({
   title: {
     textDecoration: 'none',
