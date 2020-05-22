@@ -3,8 +3,7 @@ import { Title, Menu } from '../containers';
 import arcana from '../arcana.jpg';
 import eurel from '../eurel.jpg';
 
-const Header: React.FC = () => {
-  const themeValue: number = Math.floor(Math.random() * 2) + 1;
+const SetBackground = (themeValue: number) => {
   let backgroundImage: string = '';
   switch (themeValue) {
     case 1:
@@ -17,6 +16,11 @@ const Header: React.FC = () => {
   }
   console.log(themeValue);
   document.body.style.backgroundImage = `url(${backgroundImage})`;
+}
+
+const Header: React.FC = () => {
+  const themeValue: number = Math.floor(Math.random() * 2) + 1;
+  SetBackground(themeValue);
   return (
     <div>
       <Title themeValue={themeValue} />
