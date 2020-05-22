@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Menu } from '../containers';
+import { Menu } from '../containers';
 import arcana from '../arcana.jpg';
 import eurel from '../eurel.jpg';
 
@@ -11,6 +11,7 @@ const SetBackground = (themeValue: number) => {
       break;
     case 2:
       backgroundImage = eurel;
+      break;
     default:
       break;
   }
@@ -23,7 +24,6 @@ const Header: React.FC = () => {
   SetBackground(themeValue);
   return (
     <div>
-      <Title themeValue={themeValue} />
       <Menu />
     </div>
   );

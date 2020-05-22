@@ -1,16 +1,17 @@
 import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
-import { SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG } from 'constants';
 
 const useStyle = makeStyles({
   SubTitle1: {
     fontFamily: 'CookieRunRegular',
     fontSize: '30px',
-    color: 'white'
+    color: 'white',
+    paddingTop: '10px',
+    paddingBottom: '10px',
   },
   SubTitle2: {
     fontFamily: 'CookieRunRegular',
-    fontSize: '25px',
+    fontSize: '40px',
     color: 'gold',
   },
 });

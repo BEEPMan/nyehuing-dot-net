@@ -21,6 +21,9 @@ const useStyle = makeStyles({
     fontSize: '20px',
     color: 'white'
   },
+  Bar: {
+    textAlign: 'center',
+  }
 });
 
 const Menu: React.FC = () => {
@@ -34,7 +37,7 @@ const Menu: React.FC = () => {
     <div>
       <ThemeProvider theme={theme}>
         <AppBar position='static'>
-          <Tabs value={value} onChange={handleChange} >
+          <Tabs value={value} onChange={handleChange} centered={true}>
             <Tab label='홈' component={Link} to='/' className={style.Tab} />
             <Tab label='녜힁 제조기' component={Link} to='/nyehuing' className={style.Tab} />
             <Tab label='결정석 계산기' component={Link} to='/calculator' className={style.Tab} />
