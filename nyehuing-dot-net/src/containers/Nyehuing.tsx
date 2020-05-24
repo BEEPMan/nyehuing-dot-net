@@ -109,7 +109,6 @@ const Nyehuing: React.FC = () => {
       </Typography>
       <Snackbar anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }} open={isOpen} onClose={handleClose} message="녜힁이 복사되었습니다." />
     </div>
-
   );
 }
 
