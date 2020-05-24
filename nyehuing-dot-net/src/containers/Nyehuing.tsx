@@ -98,7 +98,7 @@ const Nyehuing: React.FC = () => {
 
       <div className={style.Paragraph}>
         <ThemeProvider theme={theme}>
-          <TextField type="number" InputLabelProps={{ shrink: true }} onChange={NyehuingClick} value={2} className={style.TextField} color='primary' InputProps={{ className: style.TextFieldText }} />
+          <TextField type="number" InputLabelProps={{ shrink: true }} value={2} className={style.TextField} color='primary' InputProps={{ className: style.TextFieldText }} />
           <Typography className={style.Description}>글자의 닉네임을  생성!</Typography>
           <Button className={style.Button} variant="contained" color="primary" size="small" onClick={NyehuingMake}>Go</Button>
         </ThemeProvider>
