@@ -4,6 +4,7 @@ import dbInit from './db';
 import template from "./lib/template";
 import BossInfo from "./db/BossInfo";
 import axios from "axios";
+import { Json } from "sequelize/types/lib/utils";
 
 const app = express();
 const router = express.Router();
@@ -13,7 +14,7 @@ app.use(bodyParser.json());
 //app.use(express.static('../public'));
 app.use(express.static('../nyehuing-dot-net/build'));
 
-app.get('/calculator', async (req,res) => {
+app.get('/api/calculator', async (req,res) => {
     const boss = await BossInfo.findAll({
         order: [
             ['price', 'DESC']
