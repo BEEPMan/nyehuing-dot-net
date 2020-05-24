@@ -10,13 +10,13 @@ const make_nyehuing = (length: number) => {
   return nyehuing;
 };
 
-// function copy() {
-//   var dummy = document.createElement("textarea");
-//   document.body.appendChild(dummy);
-//   dummy.value = document.getElementById("output").value;
-//   dummy.select();
-//   document.execCommand("copy");
-//   document.body.removeChild(dummy);
-// }
+const copy = (nyehuing: string) => {
+  let t = document.createElement('textarea');
+  document.body.appendChild(t);
+  t.value = nyehuing;
+  t.select();
+  document.execCommand('copy');
+  document.body.removeChild(t);
+}
 
-export default make_nyehuing;
+export { make_nyehuing, copy };
