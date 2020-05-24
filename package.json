@@ -4,7 +4,8 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec ts-node src/main.ts"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
     "minimist": "^1.2.5",
     "mysql": "^2.17.1",
     "mysql2": "^2.1.0",
+    "nodemon": "^2.0.4",
     "pm2": "^4.2.0",
     "sequelize": "^5.21.9",
     "typescript": "^3.9.2"
