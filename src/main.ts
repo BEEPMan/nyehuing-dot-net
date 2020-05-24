@@ -3,13 +3,25 @@ import bodyParser from "body-parser";
 import dbInit from './db';
 import template from "./lib/template";
 import BossInfo from "./db/BossInfo";
+import axios from "axios";
 
 const app = express();
+const router = express.Router();
 
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
-app.use(express.static('../public'));
+//app.use(express.static('../public'));
 app.use(express.static('../nyehuing-dot-net/build'));
+
+app.get('/calculator', async (req,res) => {
+    const boss = await BossInfo.findAll({
+        order: [
+            ['price', 'DESC']
+        ]
+    });
+    console.log(boss);
+    res.send(boss);
+});
 
 app.get('*', (req,res) => {
     res.sendFile('index.html', {root: '../nyehuing-dot-net/build/'});
@@ -25,7 +37,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/nyehuing', (req, res) => {
-    /*let html = template.html('녜힁 제조기', `
+    let html = template.html('녜힁 제조기', `
         <script type="text/javascript" src="/nyehuing_maker.js"></script>
         <h2>★랜덤 녜힁 제조기★</h2>
         <input type = "button" id = "output" value = "여기에 녜힁 출력" onclick="copy()">
@@ -37,7 +49,7 @@ app.get('/nyehuing', (req, res) => {
         <p style = "line-height: 250%;font-size: 14px;">(!) 닉네임을 클릭시 자동으로 복사가 됩니다.(일부 브라우저 제외)</p>
     `);
 
-    res.send(html);*/
+    res.send(html);
 });
 
 app.get('/boss', async (req, res) => {
@@ -194,6 +206,6 @@ app.post('/boss/result', async (req, res) => {
 
 dbInit();
 
-app.listen(3000, () => {
+app.listen(3010, () => {
     console.log("Server started!");
 });
