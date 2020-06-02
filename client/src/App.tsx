@@ -1,11 +1,15 @@
 import React from 'react';
-import './App.css';
+import { ThemeProvider } from '@material-ui/styles';
+import { Router } from 'react-router-dom';
+import theme from '@src/theme';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <ThemeProvider theme={theme}>
+      <Router>
 
-    </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 
